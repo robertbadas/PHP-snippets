@@ -1,5 +1,5 @@
 <?php
-set_time_limit(300);
+set_time_limit(1000);
 $zip_file           = dirname(__FILE__) . '/FOLDER_NAME';
 
 // Get real path for our folder

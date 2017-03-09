@@ -1,5 +1,6 @@
 <?php
-$zip_file           = dirname(__FILE__) . '/FILENAME';
+set_time_limit(300);
+$zip_file           = dirname(__FILE__) . '/FOLDER_NAME';
 
 // Get real path for our folder
 $rootPath = realpath($zip_file);
@@ -32,4 +33,5 @@ foreach ($files as $name => $file)
 // Zip archive will be created only after closing object
 $zip->close();
 echo 'ZIP complete!';
+exit();
 ?>
